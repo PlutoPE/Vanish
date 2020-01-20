@@ -61,7 +61,7 @@ class VanishV2 extends PluginBase {
 		        $sender->sendMessage(self::PREFIX . C::GREEN . "You are now vanished.");
 		        $nameTag = $sender->getNameTag();
 		        self::$nametagg[$name] = $nameTag;
-		        $sender->setNameTag("§6[VANISH]§r $nameTag");
+		        $sender->setNameTag("§l§7[§bVANISHED§7]§e |§r $nameTag");
                 if($this->getConfig()->get("enable-leave") === true){
                     $msg = $this->getConfig()->get("FakeLeave-message");
                     $msg = str_replace("%name", "$name", $msg);
